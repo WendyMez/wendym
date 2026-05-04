@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-teal-950 text-gray-300">
       <div className="container-custom py-12">
         {/* Informations en ligne */}
-        <div className="flex flex-wrap items-start justify-center gap-x-12 gap-y-6 text-sm">
+        <div className="flex flex-col items-center sm:flex-row sm:flex-wrap sm:items-start sm:justify-center gap-y-6 sm:gap-x-12 text-sm text-center sm:text-left">
           {/* Téléphone */}
           <a 
             href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}

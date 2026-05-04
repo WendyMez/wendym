@@ -51,19 +51,19 @@ export default function SoinsPage() {
       {/* Information tarifs */}
       <Section background="white" className='pt-0'>
         <Card className="max-w-7xl mx-auto">
-          <div className="flex items-start gap-4">
-            <Info className="text-primary-600 shrink-0 mt-1" size={24} />
-            <div>
-              <h3 className="font-bold text-gray-700 mb-2">Informations tarifaires</h3>
-              <p className="text-gray-600">{pricingNote}</p>
+          <div>
+            <div className="flex items-center gap-4 mb-2">
+              <Info className="text-primary-600 shrink-0" size={24} />
+              <h3 className="font-bold text-gray-700">Informations tarifaires</h3>
             </div>
+            <p className="text-gray-600 md:pl-10">{pricingNote}</p>
           </div>
         </Card>
       </Section>
 
       {/* Galerie cabinet */}
       <Section background="white" className='pt-0 pb-12'>
-        <PhotoGallery images={cabinetPhotos} columns={4} />
+        <PhotoGallery images={cabinetPhotos} columns={4} altPrefix="Cabinet dentaire Dr MEZGUELDI Genas" />
       </Section>
     </>
   );

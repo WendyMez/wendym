@@ -13,20 +13,20 @@ export default function MobileMenu({ isOpen, onClose, navigation }: MobileMenuPr
   if (!isOpen) return null;
 
   return (
-    <div className="md:hidden bg-white border-t border-gray-200">
+    <div className="fixed top-20 left-0 right-0 z-40 md:hidden bg-teal-950/60 backdrop-blur border-t border-white/10">
       <div className="px-4 py-6 space-y-4">
         {navigation.map((item) => (
           <Link
             key={item.name}
             href={item.href}
             onClick={onClose}
-            className="block text-lg font-medium text-gray-700 hover:text-primary-600 transition-colors py-2"
+            className="block text-lg font-medium text-white hover:text-primary-300 transition-colors py-2"
           >
             {item.name}
           </Link>
         ))}
-        
-        <div className="pt-4 border-t border-gray-200">
+
+        <div className="pt-4 border-t border-white/20">
           <a
             href="tel:0478401488"
             className="flex items-center justify-center gap-2 bg-primary-600 text-white px-4 py-3 rounded-lg hover:bg-primary-700 transition-colors w-full"

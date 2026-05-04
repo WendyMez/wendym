@@ -61,10 +61,12 @@ export default function PedodontiePage() {
         </div>
       </Section>
 
-      <PhotoGallery images={photos} columns={4} />
-
       <Section background="white" className='pt-8 pb-0'>
-        <PhotoGallery images={cabinetPhotos} columns={4} />
+        <PhotoGallery images={photos} columns={4} altPrefix="Pédodontie cabinet Dr MEZGUELDI Genas" />
+      </Section>
+
+      <Section background="white" className='pt-4 pb-0'>
+        <PhotoGallery images={cabinetPhotos} columns={4} altPrefix="Cabinet dentaire Dr MEZGUELDI Genas" />
       </Section>
 
       {/* FAQ */}

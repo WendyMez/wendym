@@ -17,7 +17,7 @@ export default function Hero() {
               <span className="block text-primary-600 mt-2">Dr Wendy MEZGUELDI</span>
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-sm md:text-xl text-gray-600 mb-8 leading-relaxed">
               Situé à Genas, notre cabinet vous offre une médecine bucco-dentaire dans un <span className="font-medium text-teal-950">environnement moderne et chaleureux</span>. Notre approche globale permet de vous proposer une thérapeutique personnelle et <span className="font-medium text-teal-950">adaptée à votre problématique </span> orale, autour de traitements alliant esthétique du sourire, implantologie et chirurgie osseuse, parodontologie, endodontie ou dentisterie pédiatrique.
             </p>
 

@@ -1,8 +1,13 @@
+'use client';
+
 import Section from '@/components/ui/Section';
-import { Award, Droplets, Heart, Laugh } from 'lucide-react';
+import { Award, Droplets, Heart, Laugh, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function AboutDoctor() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   const values = [
     {
       icon: Heart,
@@ -19,7 +24,7 @@ export default function AboutDoctor() {
     {
       icon: Droplets,
       title: 'Asepsie rigoureuse',
-      description: 'Chaine de stérilisation complète (décontamination, nettoyage, conditionnement et stérilisation). Nous respectons scrupuleusement les recommandations nationales et des mesures de précautions universelles (c\'est-à-dire pour chaque acte et pour chaque patient) sont appliquées.',
+      description: "Chaine de stérilisation complète (décontamination, nettoyage, conditionnement et stérilisation). Nous respectons scrupuleusement les recommandations nationales et des mesures de précautions universelles (c'est-à-dire pour chaque acte et pour chaque patient) sont appliquées.",
       image: '/images/asepsie.jpg'
     },
     {
@@ -31,7 +36,7 @@ export default function AboutDoctor() {
   ];
 
   return (
-    <Section background="blue">  
+    <Section background="blue">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -39,24 +44,44 @@ export default function AboutDoctor() {
           </h2>
         </div>
 
-        {/* Valeurs */}
-        <div className="grid md:grid-cols-2 gap-12">
+        {/* Mobile : accordéon */}
+        <div className="md:hidden space-y-2">
+          {values.map((value, index) => {
+            const Icon = value.icon;
+            const isOpen = openIndex === index;
+            return (
+              <div key={index} className="bg-white/15 rounded-lg overflow-hidden">
+                <button
+                  className="w-full flex items-center justify-between px-4 py-3 text-white"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                >
+                  <div className="flex items-center gap-3 font-semibold">
+                    <Icon size={18} className="shrink-0" />
+                    {value.title}
+                  </div>
+                  <ChevronDown
+                    size={18}
+                    className={`shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+                {isOpen && (
+                  <p className="px-4 pb-4 text-sm text-white/85 leading-relaxed">
+                    {value.description}
+                  </p>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Desktop : grille de cards */}
+        <div className="hidden md:grid md:grid-cols-2 gap-12">
           {values.map((value, index) => (
             <div key={index} className="relative overflow-hidden rounded-lg shadow-md text-center">
-              {/* Image de fond de la card */}
               <div className="absolute inset-0 z-0">
-                <Image
-                  src={value.image}
-                  alt=""
-                  fill
-                  className="object-cover"
-                />
+                <Image src={value.image} alt="" fill className="object-cover" />
               </div>
-
-              {/* Overlay blanc semi-transparent */}
-              <div className="absolute inset-0 bg-white/80 z-10"></div>
-
-              {/* Contenu de la card */}
+              <div className="absolute inset-0 bg-white/80 z-10" />
               <div className="relative z-20 p-18">
                 <h3 className="font-bold text-gray-700 mb-2">{value.title}</h3>
                 <p className="text-sm text-gray-600">{value.description}</p>
