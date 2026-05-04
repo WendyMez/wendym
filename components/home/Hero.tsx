@@ -9,12 +9,12 @@ export default function Hero() {
 
       {/* Contenu */}
       <div className="relative z-20">
-        <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between container-custom py-16 md:py-24 gap-12 lg:gap-24">
+        <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between container-custom py-16 md:py-24 gap-12 lg:gap-12">
 
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-700 mb-6">
               Cabinet dentaire du
-              <span className="block text-primary-600 mt-2">Dr MEZGUELDI</span>
+              <span className="block text-primary-600 mt-2">Dr Wendy MEZGUELDI</span>
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -45,7 +45,7 @@ export default function Hero() {
 
             {/* Info urgences */}
             <div className="mt-8 p-4 bg-white rounded-lg shadow-sm border-l-4 border-teal-950">
-              <p className="text-sm font-medium text-gray-900 mb-1">
+              <p className="text-sm font-medium text-gray-700 mb-1">
                 Urgences dentaires
               </p>
               <p className="text-sm text-gray-600">

@@ -58,7 +58,7 @@ export default function AboutDoctor() {
 
               {/* Contenu de la card */}
               <div className="relative z-20 p-18">
-                <h3 className="font-bold text-gray-900 mb-2">{value.title}</h3>
+                <h3 className="font-bold text-gray-700 mb-2">{value.title}</h3>
                 <p className="text-sm text-gray-600">{value.description}</p>
               </div>
             </div>

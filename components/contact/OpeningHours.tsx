@@ -91,7 +91,7 @@ export default function OpeningHours() {
     <Card>
       <div className="flex items-center gap-3 mb-6">
         <Clock className="text-primary-600" size={32} />
-        <h2 className="text-2xl font-bold text-gray-900">Horaires d&apos;ouverture</h2>
+        <h2 className="text-2xl font-bold text-gray-700">Horaires d&apos;ouverture</h2>
       </div>
 
       {/* Info semaine actuelle */}
@@ -117,7 +117,7 @@ export default function OpeningHours() {
               !item.isOpen ? 'opacity-50' : ''
             }`}
           >
-            <span className="font-medium text-gray-900">{item.day}</span>
+            <span className="font-medium text-gray-700">{item.day}</span>
             <div className="text-right">
               <span className={item.isOpen ? 'text-gray-600' : 'text-gray-500'}>
                 {item.hours}
@@ -150,7 +150,7 @@ export default function OpeningHours() {
       <div className="mt-12 mb-6">
         <div className="flex items-center gap-2 mb-3">
           <Calendar className="text-gray-600" size={20} />
-          <h3 className="font-semibold text-gray-900">Les 4 prochaines semaines</h3>
+          <h3 className="font-semibold text-gray-700">Les 4 prochaines semaines</h3>
         </div>
         <div className="grid grid-cols-2 gap-3">
           {nextWeeks.map((week, index) => (

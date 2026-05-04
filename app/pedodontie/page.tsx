@@ -14,9 +14,16 @@ export const metadata: Metadata = {
 
 const photos = [
   'pedodontie-1.jpg',
-  'pedodontie-2.jpg',
-  'pedodontie-3.jpg',
+  'pedodontie-wendy-1.JPG',
+  'pedodontie-wendy-3.jpg',
   'pedodontie-4.jpg'
+];
+
+const cabinetPhotos = [
+  'salle-soin-1.jpg',
+  'salle-soin-2.jpg',
+  'wendy-en-soin.jpg',
+  'wendy-en-soin-2.jpg',
 ];
 
 export default function PedodontiePage() {
@@ -56,10 +63,14 @@ export default function PedodontiePage() {
 
       <PhotoGallery images={photos} columns={4} />
 
+      <Section background="white" className='pt-8 pb-0'>
+        <PhotoGallery images={cabinetPhotos} columns={4} />
+      </Section>
+
       {/* FAQ */}
       <Section background="white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-700 mb-8 text-center">
             Questions fréquentes
           </h2>
           <FAQ />

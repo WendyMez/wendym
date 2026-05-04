@@ -15,7 +15,7 @@ export default function Section({
   background = 'white',
   id
 }: SectionProps) {
-  const bgClasses = background === 'blue' ? 'bg-teal-800' : background === 'transparent' ? '' : 'bg-white';
+  const bgClasses = background === 'blue' ? 'bg-primary-800' : background === 'transparent' ? '' : 'bg-white';
   
   return (
     <section id={id} className={`section-padding ${bgClasses} ${className}`}>

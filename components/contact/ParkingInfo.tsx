@@ -6,7 +6,7 @@ import { contactInfo } from '@/data/contact';
 export default function ParkingInfo() {
   return (
     <Card>
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Accès et parking</h2>
+      <h2 className="text-2xl font-bold text-gray-700 mb-6">Accès et parking</h2>
       
       <div className="space-y-6">
         {/* À pied / Transport en commun */}
@@ -15,7 +15,7 @@ export default function ParkingInfo() {
             <Navigation className="text-primary-600" size={20} />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 mb-2">Transport en commun</h3>
+            <h3 className="font-semibold text-gray-700 mb-2">Transport en commun</h3>
             <p className="text-gray-600 text-ms">
               {contactInfo.bus.info}
             </p>
@@ -28,7 +28,7 @@ export default function ParkingInfo() {
             <Car className="text-primary-600" size={20} />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 mb-2">En voiture</h3>
+            <h3 className="font-semibold text-gray-700 mb-2">En voiture</h3>
             <p className="text-gray-600 text-ms">
               {contactInfo.parking.info}
             </p>
@@ -41,7 +41,7 @@ export default function ParkingInfo() {
             <MapPin className="text-primary-600" size={20} />
           </div>
           <div>
-            <h3 className="font-semibold text-gray-900 mb-2">Adresse exacte</h3>
+            <h3 className="font-semibold text-gray-700 mb-2">Adresse exacte</h3>
             <p className="text-gray-600 text-ms">
               {contactInfo.address.street}<br />
               {contactInfo.address.postalCode} {contactInfo.address.city}<br />

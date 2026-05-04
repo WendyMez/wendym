@@ -7,7 +7,7 @@ import { contactInfo } from '@/data/contact';
 export default function Map() {
   return (
     <Card>
-      <h2 className="text-2xl font-bold text-gray-900 mb-4">Nous localiser</h2>
+      <h2 className="text-2xl font-bold text-gray-700 mb-4">Nous localiser</h2>
       
       {/* Google Maps intégrée - Responsive */}
       <div className="relative w-full h-0 pb-[75%] mb-4 rounded-lg overflow-hidden">

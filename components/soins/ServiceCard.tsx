@@ -10,7 +10,7 @@ interface ServiceCardProps {
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <Card hover>
-      <h3 className="text-xl font-bold text-gray-900 mb-3">
+      <h3 className="text-xl font-bold text-gray-700 mb-3">
         {service.title}
       </h3>
       <p className="text-gray-600 mb-4">

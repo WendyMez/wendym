@@ -3,9 +3,17 @@ import Section from '@/components/ui/Section';
 import ServicesList from '@/components/soins/ServicesList';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
+import PhotoGallery from '@/components/ui/PhotoGallery';
 import { Phone, Info } from 'lucide-react';
 import { pricingNote } from '@/data/services';
 import { contactInfo } from '@/data/contact';
+
+const cabinetPhotos = [
+  'salle-soin-1.jpg',
+  'salle-soin-2.jpg',
+  'wendy-en-soin.jpg',
+  'wendy-en-soin-2.jpg',
+];
 
 export const metadata: Metadata = {
   title: 'Nos soins - Cabinet dentaire Dr MEZGUELDI',
@@ -46,11 +54,16 @@ export default function SoinsPage() {
           <div className="flex items-start gap-4">
             <Info className="text-primary-600 shrink-0 mt-1" size={24} />
             <div>
-              <h3 className="font-bold text-gray-900 mb-2">Informations tarifaires</h3>
+              <h3 className="font-bold text-gray-700 mb-2">Informations tarifaires</h3>
               <p className="text-gray-600">{pricingNote}</p>
             </div>
           </div>
         </Card>
+      </Section>
+
+      {/* Galerie cabinet */}
+      <Section background="white" className='pt-0 pb-12'>
+        <PhotoGallery images={cabinetPhotos} columns={4} />
       </Section>
     </>
   );
