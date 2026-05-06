@@ -1,5 +1,5 @@
 // Mettre à jour avec le vrai domaine une fois configuré sur OVH
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://siteweb-azure.vercel.app';
+export const siteUrl = 'https://drmezgueldi.fr';
 
 export const siteName = 'Cabinet dentaire Dr Wendy MEZGUELDI';
 

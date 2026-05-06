@@ -16,8 +16,14 @@ const cabinetPhotos = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Nos soins - Cabinet dentaire Dr MEZGUELDI',
-  description: 'Découvrez tous nos soins dentaires : urgences, soins généraux, pédodontie, esthétique, implantologie et plus.',
+  title: 'Soins dentaires à Genas (69740) - Cabinet Dr MEZGUELDI',
+  description: 'Soins dentaires à Genas : urgences sous 24h, implantologie, parodontologie, esthétique du sourire, pédodontie. Cabinet desservant Chassieu, Saint-Priest, Mions et alentours.',
+  alternates: { canonical: '/soins' },
+  openGraph: {
+    title: 'Soins dentaires à Genas (69740) - Dr MEZGUELDI',
+    description: 'Urgences dentaires, implantologie, esthétique et pédodontie à Genas. Cabinet desservant Chassieu, Saint-Priest, Mions et alentours.',
+    url: '/soins',
+  },
 };
 
 export default function SoinsPage() {

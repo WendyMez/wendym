@@ -8,8 +8,14 @@ import { Phone } from 'lucide-react';
 import { contactInfo } from '@/data/contact';
 
 export const metadata: Metadata = {
-  title: 'Contact - Cabinet dentaire Dr MEZGUELDI',
-  description: 'Contactez-nous pour prendre rendez-vous. Téléphone, horaires, accès et plan.',
+  title: 'Contact & Accès - Cabinet dentaire Genas (69740) - Dr MEZGUELDI',
+  description: 'Contactez le cabinet dentaire Dr MEZGUELDI à Genas (69740) - 54 rue de la République. Horaires, accès en voiture et transport, plan interactif.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact - Cabinet dentaire Dr MEZGUELDI à Genas',
+    description: 'Cabinet dentaire à Genas - 54 rue de la République, 69740. Horaires d\'ouverture, accès et plan.',
+    url: '/contact',
+  },
 };
 
 export default function ContactPage() {

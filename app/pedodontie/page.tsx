@@ -8,8 +8,14 @@ import { contactInfo } from '@/data/contact';
 import PhotoGallery from '@/components/ui/PhotoGallery';
 
 export const metadata: Metadata = {
-  title: 'Pédodontie - Cabinet dentaire Dr MEZGUELDI',
-  description: 'Soins dentaires spécialisés pour enfants. Pédodontie tous les mercredis des semaines impaires.',
+  title: 'Pédodontie à Genas (69740) - Dentiste enfant Dr MEZGUELDI',
+  description: 'Soins dentaires spécialisés pour enfants à Genas (69740). Consultations pédodontie les mercredis des semaines impaires. Cabinet proche de Chassieu, Saint-Priest et Mions.',
+  alternates: { canonical: '/pedodontie' },
+  openGraph: {
+    title: 'Pédodontie à Genas - Dentiste pour enfants Dr MEZGUELDI',
+    description: 'Soins dentaires pour enfants à Genas (69740). Consultations les mercredis des semaines impaires. Proche Chassieu, Saint-Priest, Mions.',
+    url: '/pedodontie',
+  },
 };
 
 const photos = [
